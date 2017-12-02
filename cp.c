@@ -42,6 +42,7 @@ int hashCP(CP_hashTable *ht, char course[6], char preReq[6]){
 		hashValue += preReq[j-1]; //add each character in preReq
 		j--;
 	}
+	
 	return hashValue%(ht->size);
 }
 
